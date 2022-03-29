@@ -5772,17 +5772,93 @@ div.timenode:hover .meta:after {
   -o-transform: scale(1);
   -ms-transform: scale(1);
 }
-#l_header {
-  background-color: rgba(255,255,255,0.9);
+.meta-v3 time {
+  position: relative;
 }
-#l_main .post,
-#l_side .widget {
-  background-color: rgba(255,255,255,0.8);
-  box-shadow: 0 4px 10px -4px #ebedf0;
-  -webkit-box-shadow: 0 4px 10px -4px #ebedf0;
+.meta-v3 time:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 1px;
+  width: 100%;
+  background: #000;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -khtml-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  -khtml-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  -ms-transition: all 0.7s;
 }
-#post.post {
-  background-color: var(--color-card);
+.meta-v3 time:hover:before {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -khtml-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+}
+.readmore {
+  position: relative;
+}
+.readmore:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 1px;
+  width: 100%;
+  background: #000;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -khtml-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  -khtml-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+}
+.readmore:hover:before {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -khtml-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+}
+.readmore:hover {
+  color: #f03;
+}
+.post-list .post:hover {
+  background-color: #f0f0f0;
+}
+.content ul li:hover {
+  background-color: #ededed;
+}
+.meta-v3 {
+  border-top: 1px solid rgba(153,51,102,0.678) !important;
+}
+@media screen and (max-width: 768px) {
+  .text h2,
+  p {
+    color: #2c2a2a;
+  }
+  .top p {
+    color: #f0f0f0;
+  }
+}
+#l_body {
+  background-image: linear-gradient(to right, #d3cce3, #e9e4f0);
 }
 .article mjx-container {
   font-family: Menlo, UbuntuMono, Monaco, monospace, courier, sans-serif;
