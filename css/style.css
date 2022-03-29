@@ -5860,6 +5860,11 @@ div.timenode:hover .meta:after {
 #l_body {
   background-image: linear-gradient(to right, #d3cce3, #e9e4f0);
 }
+@media screen and (max-width: 540px) {
+  #full .cover-bg {
+    background-image: url("/media/image/1648557884850.jpg") !important;
+  }
+}
 .article mjx-container {
   font-family: Menlo, UbuntuMono, Monaco, monospace, courier, sans-serif;
   padding: 16px 8px;
