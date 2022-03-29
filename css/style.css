@@ -5839,11 +5839,24 @@ div.timenode:hover .meta:after {
 .readmore:hover {
   color: #f03;
 }
+blockquote p:nth-child(3):hover {
+  text-decoration: underline !important;
+}
+.prev .content:hover {
+  text-decoration: underline !important;
+}
+.next .content:hover {
+  text-decoration: underline !important;
+}
+.widget >.content ul.entry a:hover,
+.widget >.content ul.popular-posts a:hover {
+  background: #ebebeb;
+}
+.content .flat-box:hover {
+  background: #ebebeb !important;
+}
 .post-list .post:hover {
   background-color: #f0f0f0;
-}
-.content ul li:hover {
-  background-color: #ededed;
 }
 .meta-v3 {
   border-top: 1px solid rgba(153,51,102,0.678) !important;
@@ -5864,6 +5877,54 @@ div.timenode:hover .meta:after {
   #full .cover-bg {
     background-image: url("/media/image/1648557884850.jpg") !important;
   }
+}
+.widget header {
+  border-bottom: 1px solid #ebebeb;
+}
+.fa-feed:before,
+.fa-rss:before {
+  content: "\f5d1" !important;
+  color: #f60;
+}
+.fa-folder-open:before {
+  color: #f60;
+}
+.fa-circle-info:before,
+.fa-info-circle:before {
+  color: #f60;
+}
+.fa-compact-disc:before {
+  color: #f60;
+}
+.fa-tags:before {
+  color: #f60;
+}
+.fa-magnifying-glass:before,
+.fa-search:before {
+  color: #f60;
+}
+.fa-archive:before,
+.fa-box-archive:before {
+  color: #f60;
+}
+.fa-chain:before,
+.fa-link:before {
+  color: #f60;
+}
+.fa-calendar-alt:before,
+.fa-calendar-days:before {
+  color: #e47831;
+}
+.fa-keyboard:before {
+  color: #e47831;
+}
+.fa-hourglass-2:before,
+.fa-hourglass-half:before,
+.fa-hourglass:before {
+  color: #e47831;
+}
+.rrr:before {
+  content: "\e0ab";
 }
 .article mjx-container {
   font-family: Menlo, UbuntuMono, Monaco, monospace, courier, sans-serif;
