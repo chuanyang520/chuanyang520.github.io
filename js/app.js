@@ -1097,3 +1097,19 @@ const DOMController = {
   }
 }
 Object.freeze(DOMController);
+
+var divTyping = document.getElementById('jinrishici-sentence');
+var str = divTyping.innerText
+var i = 0;
+function typing(){
+ if (i <= str.length) {
+  divTyping.innerHTML = str.slice(0, i++) + '_';
+  setTimeout('typing()', 170);
+ }
+ else{
+  divTyping.innerHTML = str;
+ }
+}
+typing();
+
+
