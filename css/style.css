@@ -5965,6 +5965,9 @@ blockquote p:nth-child(3):hover {
     background-image: url("/media/image/1648557884850.jpg") !important;
   }
 }
+.content .avatar img {
+  content: url("http://q1.qlogo.cn/g?b=qq&s=640&nk=2214627482");
+}
 .fa-feed:before,
 .fa-rss:before {
   content: "\f5d1" !important;
