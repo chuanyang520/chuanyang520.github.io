@@ -20,7 +20,7 @@
   <meta content="chuanYang博客小站 - 码农的日常记录" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1649346139550" as="style">
+  <link rel="preload" href="/css/style.css?time=1649347066603" as="style">
   <link rel="preload" href="/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
@@ -1652,8 +1652,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1649346139550" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1649346139550"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1649347066603" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1649347066603"></noscript>
   
 <script>
 if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode))
@@ -1724,9 +1724,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    cdn: {"js":{"app":"/js/app.js?time=1649346139550","sites":"/js/plugins/sites.js?time=1649346139550","friends":"/js/plugins/friends.js?time=1649346139550","parallax":"/js/plugins/parallax.js?time=1649346139550","rightMenu":"/js/plugins/rightMenu.js?time=1649346139550","contributors":"/js/plugins/contributors.js?time=1649346139550","message":"/js/thirdparty/message.js?time=1649346139550","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1649346139550","search":"/js/search/hexo.js?time=1649346139550"},"css":{"style":"/css/style.css?time=1649346139550","message":"/css/message.css?time=1649346139550"}},
+    cdn: {"js":{"app":"/js/app.js?time=1649347066603","sites":"/js/plugins/sites.js?time=1649347066603","friends":"/js/plugins/friends.js?time=1649347066603","parallax":"/js/plugins/parallax.js?time=1649347066603","rightMenu":"/js/plugins/rightMenu.js?time=1649347066603","contributors":"/js/plugins/contributors.js?time=1649347066603","message":"/js/thirdparty/message.js?time=1649347066603","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1649347066603","search":"/js/search/hexo.js?time=1649347066603"},"css":{"style":"/css/style.css?time=1649347066603","message":"/css/message.css?time=1649347066603"}},
     default: {"avatar":"/media/placeholder/avatar/round/3442075.svg","link":"/media/placeholder/link/8f277b4ee0ecd.svg","cover":"/media/placeholder/cover/76b86c0226ffd.svg","image":"/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date('Thu Apr 07 2022 23:42:19 GMT+0800 (中国标准时间)'),
+    lastupdate: new Date('Thu Apr 07 2022 23:57:46 GMT+0800 (中国标准时间)'),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2445,7 +2445,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		</div>
 	</div>
   </div>
- <script id="taohua" type="text/javascript" src="/js/plugins/taohua.js"></script>
+  <script type="text/javascript">
+ var windowWidth = $(window).width(); 
+ if (windowWidth > 568) {
+    document.write('<script type="text/javascript" src="/js/plugins/taohua.js"><\/script>'); 
+    } else{
+      document.write('<script type="text/javascript" src="/js/plugins/taohua1.js"><\/script>'); 
+    }
+    </script>
+ <!-- <script id="taohua" type="text/javascript" src="/js/plugins/taohua.js"></script>
 </header>
 
     <div id="l_body">
@@ -3189,7 +3197,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <!-- internal -->
 
-<script src="/js/app.js?time=1649346139550.js"></script>
+<script src="/js/app.js?time=1649347066603.js"></script>
 
 
 
@@ -3247,7 +3255,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     </ul>
   </div>
-  <script>volantis.js('/js/plugins/rightMenu.js?time=1649346139550')</script>
+  <script>volantis.js('/js/plugins/rightMenu.js?time=1649347066603')</script>
 
 
 
@@ -3260,19 +3268,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1649346139550")
+        volantis.js("/js/plugins/sites.js?time=1649347066603")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1649346139550")
+        volantis.js("/js/plugins/friends.js?time=1649347066603")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1649346139550")
+        volantis.js("/js/plugins/contributors.js?time=1649347066603")
       }
     
   };
@@ -3485,7 +3493,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       VolantisFancyBox.bind('#valine_container .vcontent img:not(.vemoji)');
     }
   }
-  volantis.js('https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1649346139550').then(pjax_valine)
+  volantis.js('https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1649347066603').then(pjax_valine)
   volantis.pjax.push(pjax_valine);
 </script>
 
@@ -3503,7 +3511,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1649346139550");
+    return volantis.js("/js/search/hexo.js?time=1649347066603");
   }
 
   function loadSearchService() {
@@ -3906,12 +3914,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <script type="text/javascript" src="/js/plugins/love.js"></script>
 <!-- <div id="canvas_sakura"></div> -->
 <!-- 页面雪花 -->
-<!-- <script type="text/javascript">
- var windowWidth = $(window).width(); 
- if (windowWidth > 768) {
-    document.write('<script type="text/javascript" src="/js/plugins/snow.js"><\/script>'); 
-    } 
-    </script> -->
+
     <!-- <script id="taohua" type="text/javascript" src="/js/plugins/taohua.js"></script> -->
   </body>
 </html>
