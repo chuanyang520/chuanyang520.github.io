@@ -113,10 +113,10 @@ function startSakura() {
     cxt = canvas.getContext('2d');
     var sakuraList = new SakuraList();
     var windowWidth = document.body.clientWidth; 
-    var oo = 15;
-    if (windowWidth < 568) {
-        var oo = 3;
-    }
+    var oo = 3;
+    // if (windowWidth < 568) {
+    //     var oo = 3;
+    // }
     for (var i = 0; i < oo; i++) {
         var sakura, randomX, randomY, randomS, randomR, randomFnx, randomFny;
         randomX = getRandom('x');
