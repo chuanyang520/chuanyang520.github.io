@@ -1099,7 +1099,7 @@ const DOMController = {
 Object.freeze(DOMController);
 
 var divTyping = document.getElementById('jinrishici-sentence');
-var str = divTyping.innerText
+var str = divTyping.innerHTML
 var i = 0;
 function typing(){
  if (i <= str.length) {
@@ -1111,5 +1111,17 @@ function typing(){
  }
 }
 typing();
+document.addEventListener("unload",function () {
+  console.log("执行函数============");
+  var url = window.location.pathname
+  if( url=== '/'){
+    document.write('<script id="taohua" type="text/javascript" src="/js/plugins/taohua.js"><\/script>'); 
+    console.log("url================",url);
+  }else{
+    var taohua=document.getElementById('taohua')
+    console.log("taohua===========",taohua);
+  }
+})
+
 
 

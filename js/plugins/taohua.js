@@ -1,3 +1,5 @@
+window.onload = function () {
+if (window.location.pathname === '/'){
 var stop, staticx;
 var img = new Image();
 img.src =
@@ -110,7 +112,7 @@ function startSakura() {
     document.getElementsByTagName('body')[0].appendChild(canvas);
     cxt = canvas.getContext('2d');
     var sakuraList = new SakuraList();
-    for (var i = 0; i < 50; i++) {
+    for (var i = 0; i < 15; i++) {
         var sakura, randomX, randomY, randomS, randomR, randomFnx, randomFny;
         randomX = getRandom('x');
         randomY = getRandom('y');
@@ -150,4 +152,7 @@ function stopp() {
     } else {
         startSakura();
     }
+}
+
+}
 }
