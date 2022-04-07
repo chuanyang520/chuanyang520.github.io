@@ -5968,6 +5968,12 @@ blockquote p:nth-child(3):hover {
 .content .avatar img {
   content: url("http://q1.qlogo.cn/g?b=qq&s=640&nk=2214627482");
 }
+#veditor {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+  height: 60px;
+}
 .fa-feed:before,
 .fa-rss:before {
   content: "\f5d1" !important;
