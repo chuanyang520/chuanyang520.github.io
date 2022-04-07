@@ -112,7 +112,12 @@ function startSakura() {
     document.getElementsByTagName('body')[0].appendChild(canvas);
     cxt = canvas.getContext('2d');
     var sakuraList = new SakuraList();
-    for (var i = 0; i < 15; i++) {
+    var windowWidth = document.body.clientWidth; 
+    var oo = 15;
+    if (windowWidth < 568) {
+        var oo = 3;
+    }
+    for (var i = 0; i < oo; i++) {
         var sakura, randomX, randomY, randomS, randomR, randomFnx, randomFny;
         randomX = getRandom('x');
         randomY = getRandom('y');
