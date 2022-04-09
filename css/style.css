@@ -5744,150 +5744,18 @@ div.timenode:hover .meta:after {
   -o-transform: scale(1);
   -ms-transform: scale(1);
 }
-.article-title > a {
-  position: relative;
-}
-.article-title> a:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  height: 1px;
-  width: 100%;
-  background: #000;
-  transform: scale(0);
-  -webkit-transform: scale(0);
-  -khtml-transform: scale(0);
-  -moz-transform: scale(0);
-  -o-transform: scale(0);
-  -ms-transform: scale(0);
-  transition: all 0.7s;
-  -webkit-transition: all 0.7s;
-  -khtml-transition: all 0.7s;
-  -moz-transition: all 0.7s;
-  -o-transition: all 0.7s;
-  -ms-transition: all 0.7s;
-}
-.article-title > a:hover:before {
-  transform: scale(1);
-  -webkit-transform: scale(1);
-  -khtml-transform: scale(1);
-  -moz-transform: scale(1);
-  -o-transform: scale(1);
-  -ms-transform: scale(1);
-}
-.meta-v3 time {
-  position: relative;
-}
-.meta-v3 time:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  height: 1px;
-  width: 100%;
-  background: #000;
-  transform: scale(0);
-  -webkit-transform: scale(0);
-  -khtml-transform: scale(0);
-  -moz-transform: scale(0);
-  -o-transform: scale(0);
-  -ms-transform: scale(0);
-  transition: all 0.7s;
-  -webkit-transition: all 0.7s;
-  -khtml-transition: all 0.7s;
-  -moz-transition: all 0.7s;
-  -o-transition: all 0.7s;
-  -ms-transition: all 0.7s;
-}
-.meta-v3 time:hover:before {
-  transform: scale(1);
-  -webkit-transform: scale(1);
-  -khtml-transform: scale(1);
-  -moz-transform: scale(1);
-  -o-transform: scale(1);
-  -ms-transform: scale(1);
-}
-.readmore {
-  position: relative;
-}
-.readmore:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  height: 1px;
-  width: 100%;
-  background: #000;
-  transform: scale(0);
-  -webkit-transform: scale(0);
-  -khtml-transform: scale(0);
-  -moz-transform: scale(0);
-  -o-transform: scale(0);
-  -ms-transform: scale(0);
-  transition: all 0.7s;
-  -webkit-transition: all 0.7s;
-  -khtml-transition: all 0.7s;
-  -moz-transition: all 0.7s;
-  -o-transition: all 0.7s;
-  -ms-transition: all 0.7s;
-}
-.readmore:hover:before {
-  transform: scale(1);
-  -webkit-transform: scale(1);
-  -khtml-transform: scale(1);
-  -moz-transform: scale(1);
-  -o-transform: scale(1);
-  -ms-transform: scale(1);
-}
-.readmore:hover {
-  color: #f03;
-}
-.content .text h2 {
-  position: relative;
-  border-bottom: 1px solid #ebebeb;
-}
-.content .text h2:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  height: 1px;
-  width: 100%;
-  background: #000;
-  transform: scale(0);
-  -webkit-transform: scale(0);
-  -khtml-transform: scale(0);
-  -moz-transform: scale(0);
-  -o-transform: scale(0);
-  -ms-transform: scale(0);
-  transition: all 0.7s;
-  -webkit-transition: all 0.7s;
-  -khtml-transition: all 0.7s;
-  -moz-transition: all 0.7s;
-  -o-transition: all 0.7s;
-  -ms-transition: all 0.7s;
-}
-.content .text h2:hover:before {
-  transform: scale(1);
-  -webkit-transform: scale(1);
-  -khtml-transform: scale(1);
-  -moz-transform: scale(1);
-  -o-transform: scale(1);
-  -ms-transform: scale(1);
-}
-.content .text h2:hover {
-  color: #1b79c4;
-}
-.cover-body .top .title:hover {
-  color: #1b79c4;
-  cursor: url("https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/pointer.png"), pointer;
-}
+.article-title > a,
+.meta-v3 time,
+.readmore,
+.content .text h2,
 .widget header {
   position: relative;
-  border-bottom: 1px solid #ebebeb;
 }
-.widget header:before {
+.article-title > a::before,
+.meta-v3 time::before,
+.readmore::before,
+.content .text h2::before,
+.widget header::before {
   content: "";
   position: absolute;
   left: 0;
@@ -5908,6 +5776,10 @@ div.timenode:hover .meta:after {
   -o-transition: all 0.7s;
   -ms-transition: all 0.7s;
 }
+.article-title > a:hover:before,
+.meta-v3 time:hover:before,
+.readmore:hover:before,
+.content .text h2:hover:before,
 .widget header:hover:before {
   transform: scale(1);
   -webkit-transform: scale(1);
@@ -5916,38 +5788,38 @@ div.timenode:hover .meta:after {
   -o-transform: scale(1);
   -ms-transform: scale(1);
 }
-.content .avatar:hover {
-  animation: xz 1.5s linear infinite;
-  -webkit-animation: xz 1.5s linear infinite;
-  -khtml-animation: xz 1.5s linear infinite;
-  -moz-animation: xz 1.5s linear infinite;
-  -o-animation: xz 1.5s linear infinite;
-  -ms-animation: xz 1.5s linear infinite;
+.content .text h2,
+.widget header {
+  border-bottom: 1px solid #ebebeb;
 }
-@media screen and (min-width: 768px) {
-  .content .avatar img:hover {
-    border-radius: 112px;
-    -webkit-border-radius: 112px;
-  }
+.readmore:hover {
+  color: #f03;
+}
+.content .text h2:hover,
+.cover-body .top .title:hover {
+  color: #1b79c4;
+  cursor: url("https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/pointer.png"), pointer;
+}
+.content .avatar:hover {
+  animation: rotate_animation 1.5s linear infinite;
+  -webkit-animation: rotate_animation 1.5s linear infinite;
+  -khtml-animation: rotate_animation 1.5s linear infinite;
+  -moz-animation: rotate_animation 1.5s linear infinite;
+  -o-animation: rotate_animation 1.5s linear infinite;
+  -ms-animation: rotate_animation 1.5s linear infinite;
 }
 blockquote p:nth-child(3):hover {
   text-decoration: underline !important;
 }
-.prev .content:hover {
-  text-decoration: underline !important;
-}
+.prev .content:hover,
 .next .content:hover {
   text-decoration: underline !important;
 }
 .widget >.content ul.entry a:hover,
-.widget >.content ul.popular-posts a:hover {
-  background: #ebebeb;
-}
-.content .flat-box:hover {
-  background: #ebebeb !important;
-}
+.widget >.content ul.popular-posts a:hover,
+.content .flat-box:hover,
 .post-list .post:hover {
-  background-color: #f0f0f0;
+  background: #ebebeb !important;
 }
 .meta-v3 {
   border-top: 1px solid rgba(153,51,102,0.678) !important;
@@ -5957,12 +5829,12 @@ blockquote p:nth-child(3):hover {
   p {
     color: #2c2a2a;
   }
-  .top p {
-    color: #f0f0f0;
-  }
-  .top .title {
-    font-size: 2.3rem !important;
-  }
+}
+.top p {
+  color: #f0f0f0;
+}
+.top .title {
+  font-size: 2.3rem !important;
 }
 #l_body {
   background-image: linear-gradient(to right, #d3cce3, #e9e4f0);
@@ -5985,49 +5857,32 @@ blockquote p:nth-child(3):hover {
 html {
   font-family: 'vip', 'Microsoft YaHei';
 }
-.fa-feed:before,
-.fa-rss:before {
+.fa-feed::before,
+.fa-rss::before,
+.fa-folder-open::before,
+.fa-circle-info::before,
+.fa-info-circle::before,
+.fa-compact-disc::before,
+.fa-tags::before,
+.fa-magnifying-glass::before,
+.fa-search::before,
+.fa-archive::before,
+.fa-box-archive::before,
+.fa-chain::before,
+.fa-link::before,
+.fa-calendar-alt::before,
+.fa-calendar-days::before,
+.fa-keyboard::before,
+.fa-hourglass-2::before,
+.fa-hourglass-half::before,
+.fa-hourglass::before {
+  color: #f60;
+}
+.fa-feed::before,
+.fa-rss::before {
   content: "\f5d1" !important;
-  color: #f60;
 }
-.fa-folder-open:before {
-  color: #f60;
-}
-.fa-circle-info:before,
-.fa-info-circle:before {
-  color: #f60;
-}
-.fa-compact-disc:before {
-  color: #f60;
-}
-.fa-tags:before {
-  color: #f60;
-}
-.fa-magnifying-glass:before,
-.fa-search:before {
-  color: #f60;
-}
-.fa-archive:before,
-.fa-box-archive:before {
-  color: #f60;
-}
-.fa-chain:before,
-.fa-link:before {
-  color: #f60;
-}
-.fa-calendar-alt:before,
-.fa-calendar-days:before {
-  color: #e47831;
-}
-.fa-keyboard:before {
-  color: #e47831;
-}
-.fa-hourglass-2:before,
-.fa-hourglass-half:before,
-.fa-hourglass:before {
-  color: #e47831;
-}
-.rrr:before {
+.rrr::before {
   content: "\e0ab";
 }
 #jinrishici-sentence {
@@ -6038,6 +5893,18 @@ html {
   font-weight: normal;
   text-decoration: underline;
 }
+.meta-v3 .category-link {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+  position: relative;
+  left: 22px;
+}
+.meta-v3 .category-link i {
+  position: absolute;
+  left: -21px;
+  bottom: 2px;
+}
 .browse .notlink>i {
   background-image: url("/media/image/热门.png");
   background-repeat: no-repeat;
@@ -6045,33 +5912,47 @@ html {
   width: 16px;
   height: 16px;
 }
-.fa-eye:before {
+.browse .notlink>i::before {
   content: "" !important;
 }
-#top .title:before {
+#top .title::before {
   content: "";
   position: absolute;
   left: 50%;
   bottom: -5px;
-  margin-left: -50px;
+  margin-left: -40px;
   width: 80px;
   height: 4px;
   background-color: #f60;
   visibility: visible;
 }
-#post-body h2:after {
-  content: "";
+#post-body h2 {
+  border-bottom: 1px solid #f60;
+}
+#post-body h2::after {
   visibility: visible;
+  content: "";
   position: absolute;
-  left: 50%;
-  bottom: -5px;
-  margin-left: -50px;
-  width: 20px;
-  height: 3px;
-  z-index: 1;
+  left: -21px;
+  bottom: 0;
+  width: 15px;
+  height: 50px;
+  background-color: #f60;
 }
-@-moz-keyframes xz {
-  0% {
+#post-body h2:before {
+  margin-top: -12px;
+  height: 56px;
+}
+#post-body>p {
+  background-color: #d7dfe7;
+  padding: 15px;
+  padding-left: 30px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-left: 4px solid #f60;
+}
+@-moz-keyframes rotate_animation {
+  from {
     transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     -khtml-transform: rotate(0deg);
@@ -6079,7 +5960,7 @@ html {
     -o-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
   }
-  100% {
+  to {
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     -khtml-transform: rotate(360deg);
@@ -6088,8 +5969,8 @@ html {
     -ms-transform: rotate(360deg);
   }
 }
-@-webkit-keyframes xz {
-  0% {
+@-webkit-keyframes rotate_animation {
+  from {
     transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     -khtml-transform: rotate(0deg);
@@ -6097,7 +5978,7 @@ html {
     -o-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
   }
-  100% {
+  to {
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     -khtml-transform: rotate(360deg);
@@ -6106,8 +5987,8 @@ html {
     -ms-transform: rotate(360deg);
   }
 }
-@-o-keyframes xz {
-  0% {
+@-o-keyframes rotate_animation {
+  from {
     transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     -khtml-transform: rotate(0deg);
@@ -6115,7 +5996,7 @@ html {
     -o-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
   }
-  100% {
+  to {
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     -khtml-transform: rotate(360deg);
@@ -6124,8 +6005,8 @@ html {
     -ms-transform: rotate(360deg);
   }
 }
-@keyframes xz {
-  0% {
+@keyframes rotate_animation {
+  from {
     transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     -khtml-transform: rotate(0deg);
@@ -6133,7 +6014,7 @@ html {
     -o-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
   }
-  100% {
+  to {
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     -khtml-transform: rotate(360deg);

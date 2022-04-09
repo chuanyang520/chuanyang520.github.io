@@ -1113,74 +1113,7 @@ function typing(){
 typing();
 
 
-// var divTyping1 = document.querySelector('.subtitle');
-// var str2 = divTyping1.innerHTML
-// var j = 0;
-// function typing2(){
-//  if (j <= str2.length) {
-//   divTyping1.innerHTML = str2.slice(0, j++) + '_';
-//   setTimeout('typing2()', 350);
-//  }
-//  else{
-//   divTyping1.innerHTML = str2;
-//   divTyping1.style.color='white'
-//  }
-// }
-// typing2();
-
-
-
-
-// let imgs = ["media/image/1648556882402.png"];
-// let index = 0;
-// let IntervalParallax = null;
-
-// function parallax(){
-//   let ParallaxWindow = document.querySelector(".cover-bg");
-  
-//     ParallaxWindow = document.querySelector("html");
-  
-//   Parallax.window = ParallaxWindow;
-//   Parallax.options.fade = 1500;
-//   Parallax.cache = 1;
-//   next_parallax();
-//   Parallax.init();
-//   if (imgs.length>1) {
-//     IntervalParallax = setInterval(function () {
-//       next_parallax();
-//     }, '10000');
-//   }
-// }
-
-// function next_parallax() {
-//   if (typeof Parallax == "undefined") {
-//     return
-//   }
-  
-//   if (imgs.length>=1) {
-//     Parallax.options.src = imgs[index % imgs.length];
-//     Parallax.start();
-//     index++;
-//     if (Parallax.cache) {
-//       fetch(imgs[index % imgs.length] +"?t=" + new Date().getTime());
-//       if (index == imgs.length) {
-//         Parallax.cache = 0;
-//       }
-//     }
-//   }
-// }
-// var runningOnBrowser = typeof window !== "undefined";
-// var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
-// if (!isBot) {
-//   volantis.js('/js/plugins/parallax.js?time=1649415333326').then(()=>{
-//     parallax()
-//   })
-//   volantis.pjax.send(()=>{
-//     clearInterval(IntervalParallax)
-//   },"clearIntervalParallax");
-//   volantis.pjax.push(parallax);
-// }
-
-
-
-
+// var category_link = document.querySelector(".meta-v3 .category-link");
+// var new_i=document.createElement("i")
+// new_i.setAttribute("class","fa-solid fa-folder-open fa-fw")
+// category_link.appendChild(new_i)
