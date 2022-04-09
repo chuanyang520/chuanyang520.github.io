@@ -5851,11 +5851,11 @@ blockquote p:nth-child(3):hover {
   content: url("http://q1.qlogo.cn/g?b=qq&s=640&nk=2214627482");
 }
 @font-face {
-  font-family: 'vip';
-  src: url("/media/fonts/vip/vip.otf");
+  font-family: 'YangRenDongZhuShiTi-Medium-2';
+  src: url("/media/fonts/vip/YangRenDongZhuShiTi-Medium-2.ttf");
 }
 html {
-  font-family: 'vip', 'Microsoft YaHei';
+  font-family: 'YangRenDongZhuShiTi-Medium-2';
 }
 .fa-feed::before,
 .fa-rss::before,
@@ -5892,18 +5892,6 @@ html {
 .subtitle {
   font-weight: normal;
   text-decoration: underline;
-}
-.meta-v3 .category-link {
-  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
-  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
-  display: block;
-  position: relative;
-  left: 22px;
-}
-.meta-v3 .category-link i {
-  position: absolute;
-  left: -21px;
-  bottom: 2px;
 }
 .browse .notlink>i {
   background-image: url("/media/image/热门.png");
