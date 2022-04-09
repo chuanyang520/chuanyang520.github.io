@@ -1113,7 +1113,12 @@ function typing(){
 typing();
 
 
-// var category_link = document.querySelector(".meta-v3 .category-link");
-// var new_i=document.createElement("i")
-// new_i.setAttribute("class","fa-solid fa-folder-open fa-fw")
-// category_link.appendChild(new_i)
+// 移动端隐藏导航栏, pc端打开
+var cw = document.body.clientWidth
+var l_header = document.getElementById("l_header")
+if (cw<568) {
+  l_header.className="l_header auto floatable shadow"
+}else{
+  l_header.className="l_header always floatable shadow"
+  l_header.style = "opacity: 1"
+}
