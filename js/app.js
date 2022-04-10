@@ -1113,6 +1113,19 @@ function typing(){
 typing();
 
 
+var subtitle = document.querySelector('.subtitle');
+var subtitle_str = subtitle.innerHTML
+var j = 0
+function subtitle_typing() {
+  if (j <= subtitle_str.length) {
+    subtitle.innerHTML = subtitle_str.slice(0, j++) + '_';
+    setTimeout('subtitle_typing()', 170);
+  }else{
+    subtitle.innerHTML = subtitle_str;
+    }
+  }
+subtitle_typing()
+
 // 移动端隐藏导航栏, pc端打开
 var cw = document.body.clientWidth
 var l_header = document.getElementById("l_header")

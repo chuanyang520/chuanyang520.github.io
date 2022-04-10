@@ -41,7 +41,7 @@ html {
   color: var(--color-text);
   width: 100%;
   height: 100%;
-  font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+  font-family: CangErYuYangTiW02-2, Menlo, Monaco, monospace, sans-serif;
   font-size: 16px;
 }
 html >::-webkit-scrollbar {
@@ -767,8 +767,8 @@ button {
   }
 }
 @font-face {
-  font-family: 'UbuntuMono';
-  src: url("/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf");
+  font-family: 'CangErYuYangTiW02-2';
+  src: url("/media/fonts/vip/CangErYuYangTiW02-2.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
@@ -909,7 +909,7 @@ button {
 }
 .l_header .nav-sub .title {
   font-weight: bold;
-  font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+  font-family: CangErYuYangTiW02-2, Menlo, Monaco, monospace, sans-serif;
   line-height: 1.2;
   max-height: 64px;
   white-space: normal;
