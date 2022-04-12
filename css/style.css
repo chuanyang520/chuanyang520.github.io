@@ -5944,6 +5944,7 @@ blockquote p:nth-child(3):hover {
 #post-body h2 {
   border-bottom: none;
   padding-left: 15px;
+  margin-top: 20px;
 }
 #post-body h2::after {
   visibility: visible;

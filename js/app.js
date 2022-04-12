@@ -1098,6 +1098,10 @@ const DOMController = {
 }
 Object.freeze(DOMController);
 
+
+
+
+
 var divTyping = document.getElementById('jinrishici-sentence');
 var str = divTyping.innerHTML
 var i = 0;
@@ -1135,3 +1139,9 @@ if (cw<568) {
   l_header.className="l_header always floatable shadow"
   l_header.style = "opacity: 1"
 }
+
+
+
+
+
+
