@@ -13,9 +13,9 @@
   --color-site-footer: #666;
   --color-card: #fff;
   --color-text: #444;
-  --color-block: #f6f6f6;
+  --color-block: #f6f8fa;
   --color-inlinecode: #c74f00;
-  --color-codeblock: #fff7ea;
+  --color-codeblock: #f6f8fa;
   --color-h1: #3a3a3a;
   --color-h2: #3a3a3a;
   --color-h3: #333;
@@ -897,7 +897,7 @@ button {
   flex-shrink: 0;
   line-height: 64px;
   padding: 0 24px;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
 }
 .l_header #wrapper .nav-main .title img {
