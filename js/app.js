@@ -1102,7 +1102,10 @@ Object.freeze(DOMController);
 
 
 
-var divTyping = document.getElementById('jinrishici-sentence');
+
+
+try {
+  var divTyping = document.getElementById('jinrishici-sentence');
 var str = divTyping.innerHTML
 var i = 0;
 function typing(){
@@ -1129,6 +1132,10 @@ function subtitle_typing() {
     }
   }
 subtitle_typing()
+} catch (error) {
+  
+}
+
 
 // 移动端隐藏导航栏, pc端打开
 var cw = document.body.clientWidth
@@ -1139,8 +1146,6 @@ if (cw<568) {
   l_header.className="l_header always floatable shadow"
   l_header.style = "opacity: 1"
 }
-
-
 
 
 
