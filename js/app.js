@@ -29,10 +29,16 @@ const locationHash = () => {
     if (target) {
       setTimeout(() => {
         if (window.location.hash.startsWith('#fn')) { // hexo-reference https://github.com/volantis-x/hexo-theme-volantis/issues/647
-          volantis.scroll.to(target, { addTop: - volantis.dom.header.offsetHeight - 5, behavior: 'instant' })
+          volantis.scroll.to(target, {
+            addTop: -volantis.dom.header.offsetHeight - 5,
+            behavior: 'instant'
+          })
         } else {
           // 锚点中上半部有大片空白 高度大概是 volantis.dom.header.offsetHeight
-          volantis.scroll.to(target, { addTop: 5, behavior: 'instant' })
+          volantis.scroll.to(target, {
+            addTop: 5,
+            behavior: 'instant'
+          })
         }
       }, 1000)
     }
@@ -88,13 +94,13 @@ const VolantisApp = (() => {
     }
 
     // 消息提示 复制时弹出
-    if (volantis.GLOBAL_CONFIG.plugins.message.enable
-      && volantis.GLOBAL_CONFIG.plugins.message.copyright.enable) {
+    if (volantis.GLOBAL_CONFIG.plugins.message.enable &&
+      volantis.GLOBAL_CONFIG.plugins.message.copyright.enable) {
       document.body.oncopy = function () {
         VolantisApp.message(volantis.GLOBAL_CONFIG.plugins.message.copyright.title,
           volantis.GLOBAL_CONFIG.plugins.message.copyright.message, {
-          icon: volantis.GLOBAL_CONFIG.plugins.message.copyright.icon
-        });
+            icon: volantis.GLOBAL_CONFIG.plugins.message.copyright.icon
+          });
       };
     }
   }
@@ -302,7 +308,7 @@ const VolantisApp = (() => {
             for (let index = 0; index < array.length; index++) {
               const element = array[index];
               if (volantis.dom.$(element).title === 'menu') { // 移动端菜单栏异常  
-                volantis.dom.$(element).display = "flex"      // https://github.com/volantis-x/hexo-theme-volantis/issues/706
+                volantis.dom.$(element).display = "flex" // https://github.com/volantis-x/hexo-theme-volantis/issues/706
               } else {
                 volantis.dom.$(element).show()
               }
@@ -382,14 +388,17 @@ const VolantisApp = (() => {
   fn.footnotes = () => {
     let ref = document.querySelectorAll('#l_main .footnote-backref, #l_main .footnote-ref > a');
     ref.forEach(function (e, i) {
-      ref[i].click = () => { }; // 强制清空原 click 事件
+      ref[i].click = () => {}; // 强制清空原 click 事件
       volantis.dom.$(e).on('click', (e) => {
         e.stopPropagation();
         e.preventDefault();
         let targetID = decodeURI(e.target.hash.split('#')[1]).replace(/\ /g, '-');
         let target = document.getElementById(targetID);
         if (target) {
-          volantis.scroll.to(target, { addTop: - volantis.dom.header.offsetHeight - 5, behavior: 'instant' })
+          volantis.scroll.to(target, {
+            addTop: -volantis.dom.header.offsetHeight - 5,
+            behavior: 'instant'
+          })
         }
       });
     })
@@ -477,7 +486,11 @@ const VolantisApp = (() => {
 
   // 工具类：返回时间间隔
   fn.utilTimeAgo = (dateTimeStamp) => {
-    const minute = 1e3 * 60, hour = minute * 60, day = hour * 24, week = day * 7, month = day * 30;
+    const minute = 1e3 * 60,
+      hour = minute * 60,
+      day = hour * 24,
+      week = day * 7,
+      month = day * 30;
     const now = new Date().getTime();
     const diffValue = now - dateTimeStamp;
     const minC = diffValue / minute,
@@ -523,6 +536,7 @@ const VolantisApp = (() => {
     } else {
       tozashMessage(title, message, option, done);
     }
+
     function tozashMessage(title, message, option, done) {
       const {
         icon,
@@ -599,11 +613,15 @@ const VolantisApp = (() => {
         message: message,
         buttons: [
           ['<button><b>是</b></button>', (instance, toast) => {
-            instance.hide({ transitionOut: transitionOut || 'fadeOut' }, toast, 'button');
+            instance.hide({
+              transitionOut: transitionOut || 'fadeOut'
+            }, toast, 'button');
             if (success) success(instance, toast)
           }],
           ['<button><b>否</b></button>', (instance, toast) => {
-            instance.hide({ transitionOut: transitionOut || 'fadeOut' }, toast, 'button');
+            instance.hide({
+              transitionOut: transitionOut || 'fadeOut'
+            }, toast, 'button');
             if (cancel) cancel(instance, toast)
           }]
         ],
@@ -640,12 +658,12 @@ const VolantisApp = (() => {
   // 消息提示：复制
   fn.messageCopyright = () => {
     // 消息提示 复制时弹出
-    if (volantis.GLOBAL_CONFIG.plugins.message.enable
-      && volantis.GLOBAL_CONFIG.plugins.message.copyright.enable) {
+    if (volantis.GLOBAL_CONFIG.plugins.message.enable &&
+      volantis.GLOBAL_CONFIG.plugins.message.copyright.enable) {
       VolantisApp.message(volantis.GLOBAL_CONFIG.plugins.message.copyright.title,
         volantis.GLOBAL_CONFIG.plugins.message.copyright.message, {
-        icon: volantis.GLOBAL_CONFIG.plugins.message.copyright.icon
-      });
+          icon: volantis.GLOBAL_CONFIG.plugins.message.copyright.icon
+        });
     }
   }
 
@@ -847,7 +865,10 @@ const highlightKeyWords = (() => {
       target = document.getElementById("keyword-mark-" + fn.markNextId);
     }
     if (target) {
-      volantis.scroll.to(target, { addTop: - volantis.dom.header.offsetHeight - 5, behavior: 'instant' })
+      volantis.scroll.to(target, {
+        addTop: -volantis.dom.header.offsetHeight - 5,
+        behavior: 'instant'
+      })
     }
     // Current target
     return target
@@ -862,7 +883,10 @@ const highlightKeyWords = (() => {
       target = document.getElementById("keyword-mark-" + fn.markNextId);
     }
     if (target) {
-      volantis.scroll.to(target, { addTop: - volantis.dom.header.offsetHeight - 5, behavior: 'instant' })
+      volantis.scroll.to(target, {
+        addTop: -volantis.dom.header.offsetHeight - 5,
+        behavior: 'instant'
+      })
     }
     // Current target
     return target
@@ -901,7 +925,10 @@ const highlightKeyWords = (() => {
         word = word.toLowerCase();
       }
       while ((position = text.indexOf(word, startPosition)) > -1) {
-        index.push({ position, word });
+        index.push({
+          position,
+          word
+        });
         included.add(word);
         startPosition = position + wordLen;
       }
@@ -916,7 +943,10 @@ const highlightKeyWords = (() => {
   };
   fn.mergeIntoSlice = (start, end, index) => {
     let item = index[0];
-    let { position, word } = item;
+    let {
+      position,
+      word
+    } = item;
     const hits = [];
     const count = new Set();
     while (position + word.length <= end && index.length !== 0) {
@@ -950,7 +980,10 @@ const highlightKeyWords = (() => {
     const val = node.nodeValue;
     let index = slice.start;
     const children = [];
-    for (const { position, length } of slice.hits) {
+    for (const {
+        position,
+        length
+      } of slice.hits) {
       const text = document.createTextNode(val.substring(index, position));
       index = position + length;
       let mark = document.createElement('mark');
@@ -1106,60 +1139,62 @@ Object.freeze(DOMController);
 
 try {
   var divTyping = document.getElementById('jinrishici-sentence');
-var str = divTyping.innerHTML
-var i = 0;
-function typing(){
- if (i <= str.length) {
-  divTyping.innerHTML = str.slice(0, i++) + '_';
-  setTimeout('typing()', 170);
- }
- else{
-  divTyping.innerHTML = str;
- }
-}
-typing();
+  var str = divTyping.innerHTML
+  var i = 0;
 
-
-var subtitle = document.querySelector('.subtitle');
-var subtitle_str = subtitle.innerHTML
-var j = 0
-function subtitle_typing() {
-  if (j <= subtitle_str.length) {
-    subtitle.innerHTML = subtitle_str.slice(0, j++) + '_';
-    setTimeout('subtitle_typing()', 170);
-  }else{
-    subtitle.innerHTML = subtitle_str;
+  function typing() {
+    if (i <= str.length) {
+      divTyping.innerHTML = str.slice(0, i++) + '_';
+      setTimeout('typing()', 170);
+    } else {
+      divTyping.innerHTML = str;
     }
   }
-subtitle_typing()
+  typing();
+
+
+  var subtitle = document.querySelector('.subtitle');
+  var subtitle_str = subtitle.innerHTML
+  var j = 0
+
+  function subtitle_typing() {
+    if (j <= subtitle_str.length) {
+      subtitle.innerHTML = subtitle_str.slice(0, j++) + '_';
+      setTimeout('subtitle_typing()', 170);
+    } else {
+      subtitle.innerHTML = subtitle_str;
+    }
+  }
+  subtitle_typing()
 } catch (error) {
-  
+
 }
 
 
 // 移动端隐藏导航栏, pc端打开
 var cw = document.body.clientWidth
 var l_header = document.getElementById("l_header")
-if (cw<568) {
-  l_header.className="l_header auto floatable shadow"
-}else{
-  l_header.className="l_header always floatable shadow"
+if (cw < 568) {
+  l_header.className = "l_header auto floatable shadow"
+} else {
+  l_header.className = "l_header always floatable shadow"
   l_header.style = "opacity: 1"
 }
 
+
 window.addEventListener('load', function () {
-  try {
-    document.getElementsByClassName("vpower")[0].innerText=""
-var nick = document.getElementsByClassName("vnick")
-nick[0].attributes[1].value="昵称(必填)"
-var mail = document.getElementsByClassName("vmail")
-mail[0].attributes[1].value="邮箱(必填)"
-var website = document.getElementsByClassName("vlink")
-website[0].attributes[1].value="网址 http://(选填)"
-  } catch (error) {
-    
-  }
+      try {
+        "object" == typeof exports && "object" == typeof module ? module.exports = t() : "function" == typeof define && define.amd ? define([], t) : "object" == typeof exports ? exports.Valine = t() : e.Valine = t()
+        document.getElementsByClassName("vpower")[0].innerText = ""
+        var nick = document.getElementsByClassName("vnick")
+        nick[0].attributes[1].value = "昵称(必填)"
+        var mail = document.getElementsByClassName("vmail")
+        mail[0].attributes[1].value = "邮箱(必填)"
+        var website = document.getElementsByClassName("vlink")
+        website[0].attributes[1].value = "网址 http://(选填)"
+      } catch (error) {
 
+      }
+    }
 
-
-})
+    // })

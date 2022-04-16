@@ -2053,9 +2053,12 @@
         e.config.path === '*' && (a = '<a href="' + t.get('url') + '" class="vsys">' + t.get('url') + '</a>');
         var l = t.get('link') ? /^https?\:\/\//.test(t.get('link')) ? t.get('link') : 'http://' + t.get('link') : ''
                 ; var c = l ? '<a class="vnick" rel="nofollow" href="' + l + '" target="_blank" >' + t.get('nick') + '</a>' : '<span class="vnick">' + t.get('nick') + '</span>'
-                ; var u = T.hide ? '' : e.config.enableQQ && t.get('QQAvatar') ? '<img class="vimg" src="' + t.get('QQAvatar') + '" referrerPolicy="no-referrer"/>' : '<img class="vimg" src="' + (T.cdn + (0,
+                ;
+                var u = T.hide ? '' : e.config.enableQQ && t.get('QQAvatar') ? '<img class="vimg" src="' + t.get('QQAvatar') + '" referrerPolicy="no-referrer"/>' : '<img class="vimg" src="' + (T.cdn + (0,
         s.default)(t.get('mail')) + T.params) + '">'
-                  ; var d = u + '<div class="vh"><div class="vhead">' + c + ' ' + a + '</div><div class="vmeta"><span class="vtime" >' + (0,
+                  
+        ;
+                   var d = u + '<div class="vh"><div class="vhead">' + c + ' ' + a + '</div><div class="vmeta"><span class="vtime" >' + (0,
         g.default)(t.get('insertedAt'), e.i18n) + '</span><span class="vat" data-vm-id="' + (t.get('rid') || t.id) + '" data-self-id="' + t.id + '">' + e.i18n.t('reply') + '</span></div><div class="vcontent" data-expand="' + e.i18n.t('expand') + '">' + (0,
         S.default)(t.get('comment')) + '</div><div class="vreply-wrapper" data-self-id="' + t.id + '"></div><div class="vquote" data-self-id="' + t.id + '"></div></div>';
         o.html(d);
@@ -2193,12 +2196,14 @@
           }
         }
         n.setACL(F()),
+
         n.save().then(function(t) {
           E.nick != 'Anonymous' && y.default.store.set(h.MetaCacheKey, {
             nick: E.nick,
             link: E.link,
             mail: E.mail
           });
+          console.log(mail);
           var n = e.$el.find('.vnum');
           try {
             I.rid ? C(t, (0,
@@ -2217,6 +2222,11 @@
           $.default)(e, t, 'commitEvt');
         });
       };
+      console.log("====================================================");
+      console.log(mail);
+      console.log("====================================================");
+
+
       z.on('click', L),
       (0,
       y.default)(document).on('keydown', function(e) {
@@ -4785,9 +4795,9 @@ object-assign
   },
   function(e, t) {
     e.exports = {
-      nick       : '昵称',
-      mail       : '邮箱',
-      link       : '网址(http://)',
+      nick       : '昵称(必填)',
+      mail       : '邮箱(必填)',
+      link       : '网址 http://(填)',
       nickFail   : '昵称不能少于3个字符',
       mailFail   : '请填写正确的邮件地址',
       sofa       : '来发评论吧~',

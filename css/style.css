@@ -5932,6 +5932,8 @@ blockquote p:nth-child(3):hover {
   border: none;
   border-bottom: 1px solid #ebebeb;
   -webkit-border-radius: none !important;
+  padding: 0;
+  margin-bottom: 0;
 }
 .fa-feed::before,
 .fa-rss::before,
