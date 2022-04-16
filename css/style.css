@@ -5815,13 +5815,10 @@ div.timenode:hover .meta:after {
   color: #1b79c4;
   cursor: url("https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/pointer.png"), pointer;
 }
-.content .avatar:hover {
-  animation: rotate_animation 1.5s linear infinite;
-  -webkit-animation: rotate_animation 1.5s linear infinite;
-  -khtml-animation: rotate_animation 1.5s linear infinite;
-  -moz-animation: rotate_animation 1.5s linear infinite;
-  -o-animation: rotate_animation 1.5s linear infinite;
-  -ms-animation: rotate_animation 1.5s linear infinite;
+blockquote {
+  border-left: 5px solid #000 !important;
+  border-radius: 5px !important;
+  -webkit-border-radius: 5px !important;
 }
 blockquote p:nth-child(3):hover {
   text-decoration: underline !important;
@@ -5924,10 +5921,17 @@ blockquote p:nth-child(3):hover {
 #comments #layoutHelper-comments #valine_container .vnick:hover,
 #comments #layoutHelper-comments #valine_container .vmail:hover,
 #comments #layoutHelper-comments #valine_container .vlink:hover {
-  border-bottom: 1px solid rgba(0,0,0,0.219) !important;
+  border-bottom: none !important;
 }
 #comments #layoutHelper-comments #valine_container .vheader {
-  border: 1px solid rgba(0,0,0,0.397);
+  border: none;
+}
+#comments #layoutHelper-comments #valine_container .vcard {
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  border: none;
+  border-bottom: 1px solid #ebebeb;
+  -webkit-border-radius: none !important;
 }
 .fa-feed::before,
 .fa-rss::before,
@@ -5950,7 +5954,8 @@ blockquote p:nth-child(3):hover {
 .fa-hourglass::before,
 .fa-solid::before,
 .fa-edit::before,
-.fa-fw::before {
+.fa-fw::before,
+.iconfont::before {
   color: #00bcf5;
 }
 .fa-feed::before,
@@ -5967,6 +5972,49 @@ blockquote p:nth-child(3):hover {
 .subtitle {
   font-weight: normal;
 }
+.nav-list-h .header>i {
+  margin-left: 26px;
+  position: relative;
+}
+.nav-list-h .header>i::before {
+  position: absolute;
+  left: -20px;
+  top: -23px;
+  font-weight: 999;
+}
+@media screen and (max-width: 540px) {
+  .nav-list-h .header>i {
+    margin-left: 18px;
+  }
+  .nav-list-h .header>i::before {
+    left: -15px;
+    top: -2px;
+  }
+}
+.new-meta-box .notlink .iconfont {
+  font-weight: 999;
+}
+.new-meta-box .notlink .iconfont::before {
+  position: absolute;
+  left: -3px;
+  top: -2px;
+}
+.new-meta-item .iconfont {
+  font-weight: 999;
+}
+.new-meta-item .iconfont::before {
+  position: absolute;
+  left: -5px;
+  top: -3px;
+}
+.new-meta-box .notlink .fa-solid {
+  position: relative;
+}
+.new-meta-box .notlink .fa-solid::before {
+  position: absolute;
+  left: -5px;
+  top: -10px;
+}
 .highlight {
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -5979,15 +6027,19 @@ blockquote p:nth-child(3):hover {
 .highlight:hover {
   background: #f6f8fa !important;
 }
-.browse .notlink>i {
-  background-image: url("/media/image/热门.png");
-  background-repeat: no-repeat;
-  margin-right: 10px;
-  width: 16px;
-  height: 16px;
+.content .avatar:hover {
+  animation: rotate_animation 1.5s linear infinite;
+  -webkit-animation: rotate_animation 1.5s linear infinite;
+  -khtml-animation: rotate_animation 1.5s linear infinite;
+  -moz-animation: rotate_animation 1.5s linear infinite;
+  -o-animation: rotate_animation 1.5s linear infinite;
+  -ms-animation: rotate_animation 1.5s linear infinite;
 }
-.browse .notlink>i::before {
-  content: "" !important;
+.grid {
+  padding: 0 !important;
+}
+.grid a {
+  font-size: 10px !important;
 }
 #top .title::before {
   content: "";
@@ -6264,6 +6316,159 @@ blockquote p:nth-child(3):hover {
     -ms-transform: rotate(360deg);
   }
 }
+@font-face {
+  font-family: "iconfont"; /* Project id 3334718 */
+  src: url('/media/fonts/iconfont/iconfont.woff2') format('woff2'),
+       url('/media/fonts/iconfont/iconfont.woff') format('woff'),
+       url('/media/fonts/iconfont/iconfont.ttf') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow:visible;
+  text-align: center;
+  position: relative;
+  top: -2px;
+  left: 0;
+}
+
+.icon-rizhi:before {
+  content: "\e601";
+}
+
+.icon-jinggao:before {
+  content: "\e602";
+}
+
+.icon-wancheng:before {
+  content: "\e604";
+}
+
+.icon--_zhushi:before {
+  content: "\e63a";
+}
+
+.icon-VIP:before {
+  content: "\ff16";
+}
+
+.icon-huiyuan:before {
+  content: "\ff18";
+}
+
+.icon-xihuan:before {
+  content: "\ff19";
+}
+
+.icon-huore:before {
+  content: "\ff1d";
+}
+
+.icon-tuijian:before {
+  content: "\ff25";
+}
+
+.icon-a-information2:before {
+  content: "\e607";
+}
+
+.icon-reviews:before {
+  content: "\e60a";
+}
+
+.icon-windmill:before {
+  content: "\e60b";
+}
+
+.icon-brightness:before {
+  content: "\e614";
+}
+
+.icon-jiaoben:before {
+  content: "\e605";
+}
+
+.icon-icon_daka:before {
+  content: "\e617";
+}
+
+.icon-icon-tui:before {
+  content: "\e61c";
+}
+
+.icon-icon-qian:before {
+  content: "\e61d";
+}
+
+.icon-fenlei:before {
+  content: "\e600";
+}
+
+.icon-riqi:before {
+  content: "\e68c";
+}
+
+.icon-icon:before {
+  content: "\e652";
+}
+
+.icon-fenlei-copy:before {
+  content: "\e64e";
+}
+
+.icon-guanyuwomen:before {
+  content: "\e63e";
+}
+
+.icon-zhuye:before {
+  content: "\e697";
+}
+
+.icon-guanyuwomen-:before {
+  content: "\e61a";
+}
+
+.icon-tianchongxing-:before {
+  content: "\e640";
+}
+
+.icon-xieboke:before {
+  content: "\e624";
+}
+
+.icon-riqi1:before {
+  content: "\e66a";
+}
+
+.icon-jurassic_label:before {
+  content: "\e69c";
+}
+
+.icon-biaoqian:before {
+  content: "\e603";
+}
+
+.icon-sousuo:before {
+  content: "\e8b9";
+}
+
+.icon-yinle:before {
+  content: "\e63b";
+}
+
+.icon-liulan:before {
+  content: "\e638";
+}
+
+.icon-lianjie:before {
+  content: "\e6c9";
+}
+
+
 .article mjx-container {
   font-family: INCONSOLATA, UbuntuMono, Monaco, monospace, courier, sans-serif;
   padding: 16px 8px;

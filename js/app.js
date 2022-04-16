@@ -1147,6 +1147,19 @@ if (cw<568) {
   l_header.style = "opacity: 1"
 }
 
+window.addEventListener('load', function () {
+  try {
+    document.getElementsByClassName("vpower")[0].innerText=""
+var nick = document.getElementsByClassName("vnick")
+nick[0].attributes[1].value="昵称(必填)"
+var mail = document.getElementsByClassName("vmail")
+mail[0].attributes[1].value="邮箱(必填)"
+var website = document.getElementsByClassName("vlink")
+website[0].attributes[1].value="网址 http://(选填)"
+  } catch (error) {
+    
+  }
 
 
 
+})

@@ -20,7 +20,7 @@
   <meta content="chuanYang博客小站 - 码农的日常记录" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1649931538282" as="style">
+  <link rel="preload" href="/css/style.css?time=1650117452813" as="style">
   <link rel="preload" href="/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/media/fonts/vip/CangErYuYangTiW02-2.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
@@ -1666,8 +1666,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1649931538282" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1649931538282"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1650117452813" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1650117452813"></noscript>
   
 <script>
 if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode))
@@ -1738,11 +1738,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    cdn: {"js":{"app":"/js/app.js?time=1649931538282","sites":"/js/plugins/sites.js?time=1649931538282","friends":"/js/plugins/friends.js?time=1649931538282","parallax":"/js/plugins/parallax.js?time=1649931538282","rightMenu":"/js/plugins/rightMenu.js?time=1649931538282","contributors":"/js/plugins/contributors.js?time=1649931538282","message":"/js/thirdparty/message.js?time=1649931538282","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1649931538282","search":"/js/search/hexo.js?time=1649931538282","iconfont":"/js/iconfont.js?time=1649931538282"},"css":{"style":"/css/style.css?time=1649931538282","message":"/css/message.css?time=1649931538282"}},
+    cdn: {"js":{"app":"/js/app.js?time=1650117452813","sites":"/js/plugins/sites.js?time=1650117452813","friends":"/js/plugins/friends.js?time=1650117452813","parallax":"/js/plugins/parallax.js?time=1650117452813","rightMenu":"/js/plugins/rightMenu.js?time=1650117452813","contributors":"/js/plugins/contributors.js?time=1650117452813","message":"/js/thirdparty/message.js?time=1650117452813","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1650117452813","search":"/js/search/hexo.js?time=1650117452813","iconfont":"/js/iconfont.js?time=1650117452813"},"css":{"style":"/css/style.css?time=1650117452813","message":"/css/message.css?time=1650117452813"}},
     default: {"avatar":"/media/placeholder/avatar/round/3442075.svg","link":"/media/placeholder/link/8f277b4ee0ecd.svg","cover":"/media/placeholder/cover/76b86c0226ffd.svg","image":"/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date('Thu Apr 14 2022 18:18:58 GMT+0800 (中国标准时间)'),
+    lastupdate: new Date('Sat Apr 16 2022 21:57:32 GMT+0800 (中国标准时间)'),
     sidebar: {
-      for_page: ["blogger","category","tagcloud","donate"],
+      for_page: ["blogger","category","tagcloud","donate","feedback"],
       for_post: ["toc"],
       webinfo: {
         lastupd: {
@@ -2123,7 +2123,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <!-- Custom Files head end-->
 </head>
-
   <body itemscope itemtype="http://schema.org/WebPage">
 
     <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto floatable shadow show" style='opacity: 0' >
@@ -2132,7 +2131,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='nav-sub'>
       <p class="title"></p>
       <ul class='switcher nav-list-h m-phone' id="pjax-header-nav-list">
-        <li><a id="s-comment" class="fa-solid fa-comments fa-fw" target="_self"  href="/" onclick="return false;" title="comment"></a></li>
+        <li><a id="s-comment" class="iconfont icon-xihuan" target="_self"  href="/" onclick="return false;" title="comment"></a></li>
         
       </ul>
     </div>
@@ -2157,13 +2156,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover" 
-                href="/" title="home"
+                href="/" title="主页"
                   
                   
                   
                     active-action="action-home"
                   >
-                  <i class='fa-solid fa-rss fa-fw'></i>home
+                  <i class='iconfont icon-VIP fa-fw'></i>主页
                 </a>
                 
               </li>
@@ -2174,79 +2173,65 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover" 
-                 href="/" onclick="return false;" title="blog"
+                href="/categories/" title="文章"
                   
                   
+                  
+                    active-action="action-categories"
                   >
-                  <i class='fa-solid fa-folder-open fa-fw'></i>blog
+                  <i class='iconfont icon-rizhi fa-fw'></i>文章
                 </a>
                 
-                  <ul class="list-v">
-                    
-                      
+              </li>
+            
+          
+          
+            
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover" 
-                href="/tags/" title="labels"
+                href="/tags/" title="标签"
                   
                   
                   
                     active-action="action-tags"
                   >
-                  <i class='fa-solid fa-tags fa-fw'></i>labels
+                  <i class='iconfont icon-jurassic_label fa-fw'></i>标签
                 </a>
                 
               </li>
             
           
-                    
-                      
-            
-              <hr>
-            
           
-                    
-                      
+            
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover" 
-                href="/archives/" title="file"
+                href="/archives/" title="归档"
                   
                   
                   
                     active-action="action-archives"
                   >
-                  <i class='fa-solid fa-archive fa-fw'></i>file
+                  <i class='iconfont icon-guanyuwomen- fa-fw'></i>归档
                 </a>
                 
               </li>
             
           
-                    
-                      
-            
-              <hr>
-            
           
-                    
-                      
+            
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover" 
-                href="/friends/" title="friends"
+                href="/friends/" title="朋友"
                   
                   
                   
                     active-action="action-friends"
                   >
-                  <i class='fa-solid fa-link fa-fw'></i>friends
+                  <i class='iconfont icon-guanyuwomen fa-fw'></i>朋友
                 </a>
-                
-              </li>
-            
-          
-                    
-                  </ul>
                 
               </li>
             
@@ -2256,13 +2241,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover" 
-                href="/about/" title="about"
+                href="/about/" title="关于"
                   
                   
                   
                     active-action="action-about"
                   >
-                  <i class='fa-solid fa-info-circle fa-fw'></i>about
+                  <i class='iconfont icon-windmill fa-fw'></i>关于
                 </a>
                 
               </li>
@@ -2271,38 +2256,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
             
             
-              
-                <li>
-                  <a class="menuitem flat-box">
-                    <i class='fas fa-compact-disc fa-fw music'></i>music
-                  </a>
-                  <ul class="list-v">
-                    <li>
-                      <div class="aplayer-container">
-                        
-
-  
-    <meting-js
-      theme='#1BCDFC'
-      autoplay='true'
-      volume='0.7'
-      loop='all'
-      order='list'
-      fixed='false'
-      list-max-height='320px'
-      server='netease'
-      type='album'
-      id='3175833810'
-      list-folded='true'>
-    </meting-js>
-  
-
-
-                      </div>
-                    </li>
-                  </ul>
-                <li>
-              
+              <li class='header'>
+                <i class='iconfont icon-yinle fa-fw'></i>音乐
+              </li>
             
           
           
@@ -2311,7 +2267,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
       <div class="m_search">
         <form name="searchform" class="form u-search-form">
-          <i class="icon fa-solid fa-search fa-fw"></i>
+          <i class="iconfont icon-sousuo"></i>
           <input type="text" class="input u-search-input" placeholder="Please enter keywords..." />
         </form>
       </div>
@@ -2329,13 +2285,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover" 
-                href="/" title="home"
+                href="/" title="主页"
                   
                   
                   
                     active-action="action-home"
                   >
-                  <i class='fa-solid fa-rss fa-fw'></i>home
+                  <i class='iconfont icon-VIP fa-fw'></i>主页
                 </a>
                 
               </li>
@@ -2346,79 +2302,65 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover" 
-                 href="/" onclick="return false;" title="blog"
+                href="/categories/" title="文章"
                   
                   
+                  
+                    active-action="action-categories"
                   >
-                  <i class='fa-solid fa-folder-open fa-fw'></i>blog
+                  <i class='iconfont icon-rizhi fa-fw'></i>文章
                 </a>
                 
-                  <ul class="list-v">
-                    
-                      
+              </li>
+            
+          
+            
+              
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover" 
-                href="/tags/" title="labels"
+                href="/tags/" title="标签"
                   
                   
                   
                     active-action="action-tags"
                   >
-                  <i class='fa-solid fa-tags fa-fw'></i>labels
+                  <i class='iconfont icon-jurassic_label fa-fw'></i>标签
                 </a>
                 
               </li>
             
           
-                    
-                      
             
-              <hr>
-            
-          
-                    
-                      
+              
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover" 
-                href="/archives/" title="file"
+                href="/archives/" title="归档"
                   
                   
                   
                     active-action="action-archives"
                   >
-                  <i class='fa-solid fa-archive fa-fw'></i>file
+                  <i class='iconfont icon-guanyuwomen- fa-fw'></i>归档
                 </a>
                 
               </li>
             
           
-                    
-                      
             
-              <hr>
-            
-          
-                    
-                      
+              
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover" 
-                href="/friends/" title="friends"
+                href="/friends/" title="朋友"
                   
                   
                   
                     active-action="action-friends"
                   >
-                  <i class='fa-solid fa-link fa-fw'></i>friends
+                  <i class='iconfont icon-guanyuwomen fa-fw'></i>朋友
                 </a>
-                
-              </li>
-            
-          
-                    
-                  </ul>
                 
               </li>
             
@@ -2428,13 +2370,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover" 
-                href="/about/" title="about"
+                href="/about/" title="关于"
                   
                   
                   
                     active-action="action-about"
                   >
-                  <i class='fa-solid fa-info-circle fa-fw'></i>about
+                  <i class='iconfont icon-windmill fa-fw'></i>关于
                 </a>
                 
               </li>
@@ -2443,7 +2385,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               
             
-              
+              <li class='header'>
+                <i class='iconfont icon-yinle fa-fw'></i>音乐
+              </li>
             
           
             
@@ -2457,12 +2401,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		</div>
 	</div>
   </div>
+  <script type="text/javascript" src="/js/plugins/taohua1.js"></script>
 <script type="text/javascript">
  var windowWidth = document.body.clientWidth; 
- if (windowWidth < 768) {
-    document.write('<script type="text/javascript" src="/js/plugins/taohua1.js"><\/script>'); 
-    }else{
-    }
+//  if (windowWidth < 768) {
+//     document.write('<script type="text/javascript" src="/js/plugins/taohua1.js"><\/script>'); 
+//     }else{
+//     }
+
+
+
+
     </script> 
 </header>
 
@@ -2494,28 +2443,28 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               
               active-action="action-home">
-              <img src='/media/twemoji/assets/svg/index.png'><p>home</p>
+              <img src='/media/twemoji/assets/svg/index.png'><p>主页</p>
             </a>
           
             <a href="/categories/"
               
               
               active-action="action-categories">
-              <img src='/media/twemoji/assets/svg/blog.png'><p>blog</p>
+              <img src='/media/twemoji/assets/svg/blog.png'><p>博客</p>
             </a>
           
             <a href="/about/"
               
               
               active-action="action-about">
-              <img src='/media/twemoji/assets/svg/about.png'><p>about</p>
+              <img src='/media/twemoji/assets/svg/about.png'><p>关于</p>
             </a>
           
             <a href="/friends/"
               
               
               active-action="action-friends">
-              <img src='/media/twemoji/assets/svg/firends.png'><p>friend</p>
+              <img src='/media/twemoji/assets/svg/firends.png'><p>朋友</p>
             </a>
           
         
@@ -2579,8 +2528,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
             <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-03-28T19:41:20+08:00">
   <a class='notlink'>
-    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>creation date：2022/03/28</p>
+    <i class="iconfont icon-riqi fa-fw" aria-hidden="true"></i>
+    <p>日期: 2022/03/28</p>
   </a>
 </div>
 
@@ -2590,7 +2539,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
   <div class="new-meta-item browse">
     <a class='notlink'>
-      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      <i class="iconfont icon-liulan fa-fw" aria-hidden="true"></i>
       
       <span id="/about/" class="leancloud_visitors" data-flag-title="关于我">
       <p>
@@ -2851,7 +2800,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <!-- internal -->
 
-<script src="/js/app.js?time=1649931538282.js"></script>
+<script src="/js/app.js?time=1650117452813.js"></script>
 
 
 
@@ -2909,7 +2858,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     </ul>
   </div>
-  <script>volantis.js('/js/plugins/rightMenu.js?time=1649931538282')</script>
+  <script>volantis.js('/js/plugins/rightMenu.js?time=1650117452813')</script>
 
 
 
@@ -2922,19 +2871,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1649931538282")
+        volantis.js("/js/plugins/sites.js?time=1650117452813")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1649931538282")
+        volantis.js("/js/plugins/friends.js?time=1650117452813")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1649931538282")
+        volantis.js("/js/plugins/contributors.js?time=1650117452813")
       }
     
   };
@@ -3147,7 +3096,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       VolantisFancyBox.bind('#valine_container .vcontent img:not(.vemoji)');
     }
   }
-  volantis.js('https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1649931538282').then(pjax_valine)
+  volantis.js('https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1650117452813').then(pjax_valine)
   volantis.pjax.push(pjax_valine);
 </script>
 
@@ -3165,7 +3114,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1649931538282");
+    return volantis.js("/js/search/hexo.js?time=1650117452813");
   }
 
   function loadSearchService() {
@@ -3568,7 +3517,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <script type="text/javascript" src="/js/plugins/love.js"></script>
 <!-- <div id="canvas_sakura"></div> -->
 <!-- 页面雪花 -->
-<script>
+<!-- <script>
   var _hmt = _hmt || [];
   (function() {
     var hm = document.createElement("script");
@@ -3576,7 +3525,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var s = document.getElementsByTagName("script")[0]; 
     s.parentNode.insertBefore(hm, s);
   })();
-  </script>
+  </script> -->
   
   </body>
 </html>
