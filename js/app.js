@@ -1182,19 +1182,4 @@ if (cw < 568) {
 }
 
 
-window.addEventListener('load', function () {
-      try {
-        "object" == typeof exports && "object" == typeof module ? module.exports = t() : "function" == typeof define && define.amd ? define([], t) : "object" == typeof exports ? exports.Valine = t() : e.Valine = t()
-        document.getElementsByClassName("vpower")[0].innerText = ""
-        var nick = document.getElementsByClassName("vnick")
-        nick[0].attributes[1].value = "昵称(必填)"
-        var mail = document.getElementsByClassName("vmail")
-        mail[0].attributes[1].value = "邮箱(必填)"
-        var website = document.getElementsByClassName("vlink")
-        website[0].attributes[1].value = "网址 http://(选填)"
-      } catch (error) {
 
-      }
-    }
-
-    // })
