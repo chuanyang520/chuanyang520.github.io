@@ -1294,7 +1294,7 @@ svg.loading {
 #l_main.no_sidebar {
   width: 100%;
   padding-right: 0;
-  max-width: 1040px;
+  max-width: 960px;
   margin: auto;
 }
 @media screen and (min-width: 2048px) {
@@ -1705,7 +1705,7 @@ svg.loading {
   display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
   display: flex;
   width: 100%;
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
@@ -1855,18 +1855,18 @@ canvas {
   display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
   display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
   display: block;
-  margin-top: -48px;
-  height: 96px;
+  margin-top: -32px;
+  height: 80px;
   visibility: hidden;
   pointer-events: none;
 }
 .md h1:before,
 .md h2:before {
-  margin-top: -56px;
+  margin-top: -40px;
 }
 .md .article-meta+h1,
 .md .article-meta+h2 {
-  margin-top: -104px;
+  margin-top: -88px;
 }
 .md h3,
 .md h4,
@@ -1875,16 +1875,16 @@ canvas {
   margin-bottom: 1em;
 }
 .md h3:before {
-  margin-top: -56px;
+  margin-top: -40px;
 }
 .md h4:before {
-  margin-top: -64px;
+  margin-top: -48px;
 }
 .md h5 {
   font-weight: bold;
 }
 .md h2+h3:before {
-  margin-top: -104px;
+  margin-top: -88px;
 }
 .md ul,
 .md ol {
@@ -2269,7 +2269,7 @@ canvas {
 #u-search .modal .modal-header {
   position: relative;
   width: 100%;
-  height: 64px;
+  height: 48px;
   z-index: 3;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -2297,13 +2297,13 @@ canvas {
   display: block;
   position: absolute;
   width: 55px;
-  height: 64px;
+  height: 48px;
   top: 0;
   right: 0;
   color: #fff;
   cursor: pointer;
   text-align: center;
-  line-height: 64px;
+  line-height: 48px;
   vertical-align: middle;
   transition: all 0.28s ease;
   -webkit-transition: all 0.28s ease;
@@ -2368,7 +2368,7 @@ canvas {
   background: transparent;
   border: none;
   width: 50px;
-  height: 64px;
+  height: 48px;
   vertical-align: middle;
   color: #fff;
   z-index: 2;
@@ -2377,8 +2377,8 @@ canvas {
   position: absolute;
   padding: 16px;
   width: 100%;
-  height: calc(100% - 64px);
-  top: 64px;
+  height: calc(100% - 48px);
+  top: 48px;
   left: 0;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
@@ -2500,7 +2500,7 @@ canvas {
 }
 #l_side .widget.sticky {
   position: sticky;
-  top: 80px;
+  top: 64px;
   z-index: 1;
 }
 #l_side .widget >.content {
@@ -3119,10 +3119,10 @@ canvas {
   z-index: 2;
 }
 .snackbar-content {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 16px auto;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1200px) {
   .snackbar-content {
     max-width: 100%;
   }
@@ -3179,7 +3179,7 @@ canvas {
   border-radius: 8px;
   -webkit-border-radius: 8px;
   position: sticky;
-  top: 80px;
+  top: 64px;
   transition: all 0.28s ease;
   -webkit-transition: all 0.28s ease;
   -khtml-transition: all 0.28s ease;
@@ -3201,7 +3201,7 @@ canvas {
   padding-bottom: 4px;
 }
 #l_side .toc-wrapper .content {
-  max-height: calc(100vh - 144px);
+  max-height: calc(100vh - 128px);
 }
 #l_side .toc-wrapper .content a {
   border-left: 2px solid transparent;
@@ -3222,7 +3222,7 @@ canvas {
     max-height: 1000px;
     width: auto;
     max-width: calc(100% - 2 * 16px);
-    top: 48px;
+    top: 32px;
     right: 16px;
     border-radius: 4px;
     -webkit-border-radius: 4px;
