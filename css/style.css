@@ -5975,8 +5975,8 @@ blockquote p:nth-child(3):hover {
   margin-bottom: 0;
 }
 #comments #layoutHelper-comments #valine_container .vcard .vimg {
-  border-radius: 0;
-  -webkit-border-radius: 0;
+  border-radius: 10px !important;
+  -webkit-border-radius: 10px !important;
   margin-top: 3px;
 }
 #comments #layoutHelper-comments #valine_container #veditor {
@@ -6021,7 +6021,7 @@ blockquote p:nth-child(3):hover {
   padding: 0 4px;
   background-color: #d87474;
 }
-#comments #layoutHelper-comments #valine_container .vnick {
+#comments #layoutHelper-comments #valine_container .vh .vhead .vnick {
   margin-right: 0;
   padding: 0;
 }
