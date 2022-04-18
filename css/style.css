@@ -5977,9 +5977,14 @@ blockquote p:nth-child(3):hover {
 #comments #layoutHelper-comments #valine_container .vcard .vimg {
   border-radius: 0;
   -webkit-border-radius: 0;
+  margin-top: 3px;
 }
 #comments #layoutHelper-comments #valine_container #veditor {
-  min-height: 0;
+  background: url("https://cdn.jsdelivr.net/gh/drew233/cdn/20200409110727.webp") top right;
+  background-repeat: no-repeat;
+}
+#comments #layoutHelper-comments #valine_container #veditor:focus {
+  background: none;
 }
 #comments #layoutHelper-comments #valine_container .vrow {
   padding: 4px 0;
@@ -5987,19 +5992,63 @@ blockquote p:nth-child(3):hover {
 #comments #layoutHelper-comments #valine_container .vempty {
   padding: 0;
 }
-#comments #layoutHelper-comments #valine_container .vcards .vhead .vsys {
+#comments #layoutHelper-comments #valine_container .vmeta .vtime {
+  font-size: 0.7125rem;
+  padding: 0px 0.8rem;
+  border: 1px solid;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+#comments #layoutHelper-comments #valine_container .vcards .vhead #comment_equipment span {
   display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
   display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
   display: inline;
   padding: 0;
   margin: 0;
-  margin-left: 2px;
   font-size: 10px !important;
-  color: #b9a372;
+  color: #fff;
+}
+#comments #layoutHelper-comments #valine_container .vcards .vhead #comment_equipment span:nth-child(1) {
+  padding: 0 4px;
+  margin-right: 2px;
+  background-color: #000;
+}
+#comments #layoutHelper-comments #valine_container .vcards .vhead #comment_equipment span:nth-child(2) {
+  padding: 0 4px;
+  background-color: #7878e0;
+}
+#comments #layoutHelper-comments #valine_container .vcards .vhead #comment_equipment span:nth-child(3) {
+  padding: 0 4px;
+  background-color: #d87474;
 }
 #comments #layoutHelper-comments #valine_container .vnick {
-  padding-right: 0;
   margin-right: 0;
+  padding: 0;
+}
+#comment_equipment {
+  margin-top: -6px;
+}
+[color-scheme='dark'] .vnick {
+  color: #dcdcdc !important;
+}
+[color-scheme='dark'] #comments #layoutHelper-comments #valine_container #veditor {
+  background: none;
+}
+#comments #layoutHelper-comments #valine_container .vat {
+  font-size: 0.7125rem;
+  padding: 0px 0.8rem;
+  border: 1px solid;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+#comments #layoutHelper-comments #valine_container .vat:hover {
+  color: #d84242;
+  border-color: #e70707;
+}
+#comments #layoutHelper-comments #valine_container button {
+  background-color: #000;
+  padding: 0.3rem 0.8rem;
+  color: #fff;
 }
 #comments {
   padding-bottom: 0 !important;
@@ -6366,6 +6415,10 @@ blockquote p:nth-child(3):hover {
   -webkit-border-radius: 3px !important;
   padding: 0 5px;
 }
+footer.footer a.social img {
+  margin: -5px;
+  height: 20px;
+}
 @-moz-keyframes rotate_animation {
   from {
     transform: rotate(0deg);
@@ -6454,7 +6507,7 @@ blockquote p:nth-child(3):hover {
   overflow:visible;
   text-align: center;
   position: relative;
-  top: -2px;
+  top: 2px;
   left: 0;
 }
 
