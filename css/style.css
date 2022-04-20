@@ -292,7 +292,7 @@ article#arc .timenode .meta {
   display: -webkit-flex /* NEW - Chrome */;
   display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
   display: flex;
-  font-size: 0.8375rem;
+  font-size: 1rem;
   font-weight: 500;
   border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -350,7 +350,7 @@ article#cat .all-cats a {
   border-radius: 4px;
   -webkit-border-radius: 4px;
   color: var(--color-list);
-  font-size: 0.8375rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 article#cat .all-cats a:hover {
@@ -412,7 +412,7 @@ article#tag .all-tags ul li {
   display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
   display: flex;
   position: relative;
-  font-size: 0.8375rem;
+  font-size: 1rem;
 }
 article#tag .all-tags ul li a {
   display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
@@ -558,7 +558,7 @@ article#tag .all-tags ul li span:before {
 .article blockquote ol {
   text-align: left;
   word-wrap: normal;
-  font-size: 0.8375rem;
+  font-size: 1rem;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
@@ -596,7 +596,7 @@ article#tag .all-tags ul li span:before {
   margin-bottom: 1em;
   overflow: auto;
   background: var(--color-codeblock);
-  font-size: 0.7125rem;
+  font-size: 1rem;
   font-family: INCONSOLATA, UbuntuMono, Monaco, monospace, courier, sans-serif;
   border: 1px solid #e2e9ef;
   padding: 16px;
@@ -628,7 +628,7 @@ article#tag .all-tags ul li span:before {
 @media screen and (max-width: 500px) {
   .article ul,
   .article ol {
-    font-size: 0.775rem;
+    font-size: 1rem;
   }
   .article figure {
     font-size: 13px;
@@ -787,7 +787,7 @@ article#tag .all-tags ul li span:before {
   line-height: 1.75;
   padding-bottom: 8px;
   font-weight: 500;
-  font-size: 0.775rem;
+  font-size: 1rem;
   color: var(--color-list);
 }
 .md .footer .header i {
@@ -806,7 +806,7 @@ article#tag .all-tags ul li span:before {
   padding: 16px;
 }
 .md .footer .references .body a {
-  font-size: 0.8375rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 .md .footer .related_posts .body {
@@ -857,12 +857,12 @@ article#tag .all-tags ul li span:before {
   -webkit-line-clamp: 1;
 }
 .md .footer .related_posts .body .vlts-rps .excerpt {
-  font-size: 0.775rem;
+  font-size: 1rem;
   color: var(--color-meta);
   -webkit-line-clamp: 3;
 }
 .md .footer .copyright blockquote p {
-  font-size: 0.775rem;
+  font-size: 1rem;
   margin: 0.25em 0;
 }
 .md .footer .copyright blockquote p a {
@@ -897,7 +897,7 @@ article .readmore {
   display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
   display: block;
   margin-top: 24px;
-  font-size: 0.775rem;
+  font-size: 1rem;
 }
 footer.footer {
   position: relative;
@@ -910,7 +910,7 @@ footer.footer {
 }
 footer.footer,
 footer.footer p {
-  font-size: 0.7125rem;
+  font-size: 1rem;
 }
 footer.footer .licenses {
   color: fade(, 50%);
@@ -993,7 +993,7 @@ footer.footer .copyright {
   margin-top: 16px;
 }
 footer.footer .copyright p {
-  font-size: 0.78125rem;
+  font-size: 1rem;
 }
 @media screen and (max-width: 768px) {
   footer.footer {
@@ -1032,7 +1032,7 @@ footer.footer .copyright p {
   display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
   display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
   display: block;
-  font-size: 0.775rem;
+  font-size: 1rem;
   line-height: 1.2;
   color: var(--color-text);
 }
@@ -1091,7 +1091,7 @@ footer.footer .copyright p {
   display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
   display: block;
   margin: 0.75rem auto;
-  font-size: 0.7125rem;
+  font-size: 1rem;
   color: var(--color-meta);
 }
 .md .img-wrap .image-caption:empty {
@@ -1491,7 +1491,7 @@ svg.loading {
 #l_main .post .article-meta .new-meta-box,
 #l_main .post .article-meta .new-meta-box p,
 #l_main .post .article-meta .new-meta-box i {
-  font-size: 0.7125rem;
+  font-size: 1rem;
 }
 #l_main .post .article-meta .new-meta-box .new-meta-item {
   color: var(--color-meta);
@@ -1736,7 +1736,7 @@ article#comments p[ct] {
 article#comments p[cst] {
   margin-top: 1em;
   margin-bottom: 1em;
-  font-size: 0.775rem;
+  font-size: 1rem;
 }
 article#comments #load-btns,
 article#comments #loading-comments {
@@ -1888,7 +1888,7 @@ canvas {
 }
 .md ul,
 .md ol {
-  font-size: 0.8375rem;
+  font-size: 1rem;
   list-style: initial;
   padding-left: 8px;
   margin-left: 16px;
@@ -2039,7 +2039,7 @@ canvas {
   width: 1rem;
 }
 #l_main .article .prev-next >a p.content {
-  font-size: 0.775rem;
+  font-size: 1rem;
   font-weight: 400;
   text-align: justify;
   word-break: break-all;
@@ -2143,10 +2143,10 @@ canvas {
   -ms-user-select: none;
 }
 .meta-v3 time {
-  font-size: 0.775rem;
+  font-size: 1rem;
 }
 .meta-v3 .category-link {
-  font-size: 0.775rem;
+  font-size: 1rem;
   color: var(--color-meta);
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
@@ -2446,7 +2446,7 @@ canvas {
   overflow: hidden;
   word-break: break-all;
   text-overflow: ellipsis;
-  font-size: 0.7125rem;
+  font-size: 1rem;
   color: var(--color-meta);
 }
 #u-search .modal .modal-body .modal-results .result .icon {
@@ -2507,7 +2507,7 @@ canvas {
   max-height: 200vh;
   overflow: auto;
   text-align: justify;
-  font-size: 0.775rem;
+  font-size: 1rem;
   max-width: 100%;
 }
 @media screen and (max-width: 768px) {
@@ -2569,7 +2569,7 @@ canvas {
   border-top-right-radius: 8px;
   padding: calc(16px - 2px);
   font-weight: bold;
-  font-size: 0.775rem;
+  font-size: 1rem;
   padding-bottom: 0;
 }
 .widget header,
@@ -2642,7 +2642,7 @@ canvas {
   -ms-flex: none 0;
   flex: none 0;
   font-weight: normal;
-  font-size: 0.775rem;
+  font-size: 1rem;
   color: rgba(68,68,68,0.7);
 }
 .widget >.content ul.entry a.active,
@@ -2847,7 +2847,7 @@ canvas {
 }
 .widget.text .content,
 .widget.text .content p {
-  font-size: 0.775rem;
+  font-size: 1rem;
   word-break: break-all;
 }
 .widget.text .content a {
@@ -2869,7 +2869,7 @@ canvas {
   padding: 8px 0;
 }
 .widget.list .content a {
-  font-size: 0.775rem;
+  font-size: 1rem;
   font-weight: bold;
   line-height: 1.5;
   padding-top: 6px;
@@ -2934,7 +2934,7 @@ canvas {
   -ms-flex-direction: column;
   flex-direction: column;
   align-items: center;
-  font-size: 0.78125rem;
+  font-size: 1rem;
   font-weight: bold;
   color: rgba(68,68,68,0.7);
   line-height: 1.5;
@@ -3019,7 +3019,7 @@ canvas {
   margin-bottom: 8px;
 }
 .widget.related_posts .content h3 {
-  font-size: 0.775rem;
+  font-size: 1rem;
   font-weight: bold;
   margin: 0;
 }
@@ -3261,7 +3261,7 @@ canvas {
 #l_side .toc-wrapper a {
   padding-left: 8px;
   color: var(--color-meta);
-  font-size: 0.775rem;
+  font-size: 1rem;
   display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
   display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
   display: inline-block;
@@ -3448,12 +3448,12 @@ canvas {
 .md div.btns p,
 .article div.btns a,
 .md div.btns a {
-  font-size: 0.7125rem;
+  font-size: 1rem;
   color: var(--color-p);
 }
 .article div.btns b,
 .md div.btns b {
-  font-size: 0.775rem;
+  font-size: 1rem;
 }
 .article div.btns.wide>a,
 .md div.btns.wide>a {
@@ -4278,7 +4278,7 @@ div.fancybox .gallery {
   overflow: hidden;
 }
 div.fancybox .image-caption {
-  font-size: 0.7125rem;
+  font-size: 1rem;
   padding-top: 0.5em;
   padding-bottom: 1em;
   color: var(--color-meta);
@@ -4297,7 +4297,7 @@ details {
   border-radius: 18px;
   -webkit-border-radius: 18px;
   background: var(--color-card);
-  font-size: 0.8375rem;
+  font-size: 1rem;
   transition: all 0.28s ease;
   -webkit-transition: all 0.28s ease;
   -khtml-transition: all 0.28s ease;
@@ -4313,7 +4313,7 @@ details summary {
   border-radius: 18px;
   -webkit-border-radius: 18px;
   color: rgba(68,68,68,0.7);
-  font-size: 0.775rem;
+  font-size: 1rem;
   font-weight: bold;
   position: relative;
   line-height: normal;
@@ -4788,7 +4788,7 @@ img.inline {
 .md .link-card p.url {
   flex-shrink: 0;
   color: var(--color-meta);
-  font-size: 0.7125rem;
+  font-size: 1rem;
 }
 .md .link-group {
   display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
@@ -4916,7 +4916,7 @@ div.note {
   padding-left: calc(16px + 16px);
   border-radius: 4px;
   -webkit-border-radius: 4px;
-  font-size: 0.8375rem;
+  font-size: 1rem;
   background: var(--color-block);
   border-left: 4px solid #fff;
   background: #e5e5e5;
@@ -5292,7 +5292,7 @@ p.p.right {
 }
 span.p.small,
 p.p.small {
-  font-size: 0.775rem;
+  font-size: 1rem;
 }
 span.p.large,
 p.p.large {
@@ -5491,7 +5491,7 @@ div.tabs {
   -webkit-border-radius: 4px;
   background: var(--color-card);
   border: 1px solid rgba(68,68,68,0.2);
-  font-size: 0.8375rem;
+  font-size: 1rem;
 }
 div.tabs .highlight,
 div.tabs p,
@@ -5541,7 +5541,7 @@ div.tabs ul.nav-tabs li.tab a {
   -webkit-border-radius: 4px 4px 0 0;
   padding: 8px;
   text-align: center;
-  font-size: 0.775rem;
+  font-size: 1rem;
   line-height: inherit;
   font-weight: bold;
   color: var(--color-meta);
@@ -5669,7 +5669,7 @@ div.timenode .body {
 div.timenode .meta {
   position: relative;
   color: var(--color-meta);
-  font-size: 0.775rem;
+  font-size: 1rem;
   line-height: 32px;
   height: 32px;
 }
@@ -7449,7 +7449,7 @@ pre {
   display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
   display: block;
   background: var(--color-block);
-  font-size: 0.7125rem;
+  font-size: 1rem;
   font-family: INCONSOLATA, UbuntuMono, Monaco, monospace, courier, sans-serif;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -7780,7 +7780,7 @@ article#comments #valine_container .vwrap .vedit span.actived {
 }
 article#comments #valine_container .vcount {
   color: var(--color-p);
-  font-size: 0.775rem;
+  font-size: 1rem;
   padding: 0;
   font-weight: inherit;
 }
@@ -7937,7 +7937,7 @@ article#comments #valine_container .vempty {
 }
 article#comments #valine_container .vpower,
 article#comments #valine_container .vpower a {
-  font-size: 0.78125rem;
+  font-size: 1rem;
 }
 article#comments #valine_container .vpower a {
   color: var(--color-p);
@@ -8230,7 +8230,7 @@ ul.list-v.rightmenu >li>span {
   display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
   display: block;
   color: var(--color-list);
-  font-size: 0.775rem;
+  font-size: 1rem;
   line-height: 36px;
   padding: 0 20px 0 16px;
   text-overflow: ellipsis;
@@ -8312,7 +8312,7 @@ ul.list-v.rightmenu li.music.name {
 }
 ul.list-v.rightmenu li.music.name p.nav.music-title {
   color: #696969;
-  font-size: 0.775rem;
+  font-size: 1rem;
   max-width: 128px;
   margin: 0 20px;
   overflow: hidden;
